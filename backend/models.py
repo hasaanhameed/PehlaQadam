@@ -23,7 +23,7 @@ class UserProfile(Base):
     degree_level = Column(String, index=True)  
 
     preferred_cities = Column(ARRAY(String))        
-    preferred_work_types = Column(ARRAY(String))    
+    preferred_work_types = Column(String)    
 
 class Skill(Base):
     __tablename__ = 'skills'
